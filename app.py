@@ -74,4 +74,3 @@ def handle_message(event):
             reply = TextSendMessage(text=f"{get_message}")
     # Send To Line
     line_bot_api.reply_message(event.reply_token, reply)
-app.run(host="0.0.0.0", port=8080)
