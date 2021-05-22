@@ -27,7 +27,7 @@ QA = {
 
 app = Flask(__name__)
 
-line_bot_api =  LineBotApi(os.environ.get("CHANNEL_ACCESS_TOKEN"))
+line_bot_api = LineBotApi(os.environ.get("CHANNEL_ACCESS_TOKEN"))
 handler = WebhookHandler(os.environ.get("CHANNEL_SECRET"))
 
 
@@ -65,7 +65,7 @@ def handle_message(event):
                     MessageAction(label=f"{question}", text=f"{question}")
                 )
             buttons_template = ButtonsTemplate(
-                title="請問你要問什麼問題呢？", text="", actions=actions
+                title="請問你要問什麼問題呢？", text="請選擇一個問題詢問～", actions=actions
             )
             reply = TemplateSendMessage(
                 alt_text="Buttons alt text", template=buttons_template
@@ -74,4 +74,4 @@ def handle_message(event):
             reply = TextSendMessage(text=f"{get_message}")
     # Send To Line
     line_bot_api.reply_message(event.reply_token, reply)
-# app.run(host="0.0.0.0", port=8080)
+app.run(host="0.0.0.0", port=8080)
