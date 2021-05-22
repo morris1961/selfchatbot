@@ -7,7 +7,7 @@ __pycache__/
 *.so
 .flaskenv
 .vscode
-ngrok
+ngrok.exe
 
 # Distribution / packaging
 .Python
