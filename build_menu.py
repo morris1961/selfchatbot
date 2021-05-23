@@ -3,7 +3,7 @@ import json
 import os
 from linebot import LineBotApi
 
-token = os.environ.get("CHANNEL_ACCESS_TOKEN")
+token = "7/7gou6qGoMSR2h5nkBKKmKuhJWWO/rClLPnAxbuwaZOyxQTPz+PMOh9jOc+/mG4s1bhhbr7GiXPbJR+YkiGZo2fHNP7w2hBVs4jFOLmvV1BsnpmVwtJpFZJ+V2DH0e3258MgGOZCmT2e0P0Lqz9LAdB04t89/1O/w1cDnyilFU=" #os.environ.get("CHANNEL_ACCESS_TOKEN")
 line_bot_api = LineBotApi(f"{token}")
 
 # clear richimage
@@ -30,7 +30,7 @@ body = {
         },
         {
             "bounds": {"x": 1666, "y": 0, "width": 833, "height": 842},
-            "action": {"type": "uri", "uri": "https://pda.104.com.tw/profile/share/8pkKfdOd45rkB9uUinyZZt7SFmWb1img"},
+            "action": {"type": "uri", "uri": "https://drive.google.com/file/d/1SHT1VED3VLM4mIgvqDjJsh-cjof2MLtj/view?usp=sharing"},
         },
         {
             "bounds": {"x": 0, "y": 842, "width": 833, "height": 842},
@@ -38,7 +38,7 @@ body = {
         },
         {
             "bounds": {"x": 833, "y": 842, "width": 833, "height": 842},
-            "action": {"type": "message", "text": "nope"},
+            "action": {"type": "message", "text": "聯絡我"},
         },
         {
             "bounds": {"x": 1666, "y": 842, "width": 833, "height": 842},
