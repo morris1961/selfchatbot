@@ -3,7 +3,7 @@ import json
 import os
 from linebot import LineBotApi
 
-token = "7/7gou6qGoMSR2h5nkBKKmKuhJWWO/rClLPnAxbuwaZOyxQTPz+PMOh9jOc+/mG4s1bhhbr7GiXPbJR+YkiGZo2fHNP7w2hBVs4jFOLmvV1BsnpmVwtJpFZJ+V2DH0e3258MgGOZCmT2e0P0Lqz9LAdB04t89/1O/w1cDnyilFU=" #os.environ.get("CHANNEL_ACCESS_TOKEN")
+token = os.environ.get("CHANNEL_ACCESS_TOKEN")
 line_bot_api = LineBotApi(f"{token}")
 
 # clear richimage
