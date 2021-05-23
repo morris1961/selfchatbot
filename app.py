@@ -74,7 +74,7 @@ def handle_message(event):
         elif "聯絡我" in get_message:
             reply = TextSendMessage(
                 text="""電話：0923607008
-            email：morris881961@gmail.com"""
+email：morris881961@gmail.com"""
             )
         else:
             reply = TextSendMessage(text=f"{get_message}")
